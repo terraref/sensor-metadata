@@ -1,7 +1,7 @@
 {
   "sensor manufacturer": "Headwall Scientific",
   "sensor product name": "SWIR",
-  "sensor serial number": "PaS6-115",
+  "sensor serial number": "G4-383",
   "sensor description": "hyperspectral camera to measure shortwave infrared (SWIR) radiation",
   "sensor purpose": "measures spectral reflectance from 950nm to 2500nm",
   "location in gantry system": "camera box, facing ground",
