@@ -3,7 +3,7 @@
   "sensor product name": "SKR 1860 DA",
   "sensor serial number facing up": "45951",
   "sensor serial number facing down": "45952",
-  "sensor description": "4 channel ampliefied sensor",
+  "sensor description": "4 channel amplified sensor",
   "channel 1 wavelength facing sky [nm]": "633",
   "channel 1 bandwidth facing sky [nm]": "38",
   "channel 4 wavelength facing sky [nm]": "800.7",

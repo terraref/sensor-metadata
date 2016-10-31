@@ -3,7 +3,7 @@
   "sensor product name": "Crop Cirlce ACS430",
   "sensor serial number": "Todo",
   "sensor description": "Active Crop Canopy Sensor",
-  "sensor purpose": "measure crop/soil refelectance at 670nm, 730nm, 780nm",
+  "sensor purpose": "measure crop/soil reflectance at 670nm, 730nm, 780nm",
   "location in gantry system": "camera box, facing ground",
   "location in camera box x [m]": "0.480",
   "location in camera box y [m]": "1.920",

@@ -1,7 +1,7 @@
 {
   "sensor manufacturer": "LemnaTec Corp.",
   "sensor product name": "Stereo RGB camera",
-  "cameras alignment": "cameras optical axis parallel to XAxis, perpendicular to ground",
+  "cameras alignment": "cameras optical axis parallel to X-axis, perpendicular to ground",
   "camera manufacturer (north and south)": "Allied Vision",
   "camera product name (north and south)": "GT3300C",
   "camera serial number (north)": "02-2623A-07141",
