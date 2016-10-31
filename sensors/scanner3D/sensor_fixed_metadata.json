@@ -1,0 +1,21 @@
+{
+  "sensor manufacturer": "Fraunhofer-Entwicklungszentrum R?ntgentechnik EZRT, Ber?hrungslose Mess- und Pr?fsysteme, www.iis.fraunhofer.de",
+  "sensor product name": "Custom made 3D Scanner",
+  "sensor east serial number": "S215-1030",
+  "sensor west serial number": "S215-1036",
+  "sensor description": "two laser / camera combinations",
+  "sensor purpose": "measure 3D surface topology",
+  "laser emission wavelenght [nm]": "810",
+  "laser emission energy [W]": "2",
+  "location in gantry system": "camera box, facing ground",
+  "scanner east location in camera box x [m]": "2.070",
+  "scanner east location in camera box y [m]": "0.306",
+  "scanner east location in camera box z [m]": "1.135",
+  "scanner west location in camera box x [m]": "2.070",
+  "scanner west location in camera box y [m]": "2.726",
+  "scanner west location in camera box z [m]": "1.135",
+  "field of view y [m]": "0.800",
+  "Calibration available": "false",
+  "output data format": ".ply open file format",
+  "sensor id": "3d camera box"
+}

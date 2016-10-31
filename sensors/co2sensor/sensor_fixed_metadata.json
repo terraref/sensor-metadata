@@ -1,0 +1,16 @@
+{
+  "sensor manufacturer": "Vaisala",
+  "sensor product name": "Carbocap CO2 Probe GMP343 A1C1B0N0N0B",
+  "sensor serial number": "L3420008",
+  "additional info": "SO 5530060878",
+  "sensor purpose": "measure CO2 concentration in air",
+  "calibration date": "2015.08.18",
+  "calibration certificate": "handed out to UA Maricopa",
+  "location in gantry system": "camera box, facing ground",
+  "location in camera box x [m]": "0.35",
+  "location in camera box y [m]": "2.62",
+  "location in camera box z [m]": "0.7",
+  "analog digital interface": "WAGO 750-478",
+  "output data format": "text/xml",
+  "sensor id": "co2 camera box"
+}

@@ -1,0 +1,22 @@
+{
+  "sensor manufacturer": "Sky Instruments Ltd",
+  "sensor product name": "SKR 1860 DA",
+  "sensor serial number facing up": "45951",
+  "sensor serial number facing down": "45952",
+  "sensor description": "4 channel ampliefied sensor",
+  "channel 1 wavelength facing sky [nm]": "633",
+  "channel 1 bandwidth facing sky [nm]": "38",
+  "channel 4 wavelength facing sky [nm]": "800.7",
+  "channel 4 bandwidth facing sky [nm]": "38.5",
+  "channel 1 wavelength facing ground [nm]": "633.2",
+  "channel 1 bandwidth facing ground [nm]": "38.3",
+  "channel 4 wavelength facing ground [nm]": "799.7",
+  "channel 4 bandwidth facting ground [nm]": "38.4",
+  "Date of calibration": "2015.09.01",
+  "calibration certificate": "handed to UA Maricopa",
+  "Manufacturer advice": "recalibration within two years",
+  "location in gantry system": "top of gantry, facing up, camera box, facing ground",
+  "location in camera box x [m]": "0.33",
+  "location in camera box y [m]": "2.50",
+  "analog digital interface, all four sensors": "WAGO 750-478"
+}

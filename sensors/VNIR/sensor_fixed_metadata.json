@@ -1,0 +1,7 @@
+{
+  "sensor manufacturer": "Headwall Scientific",
+  "sensor product name": "VNIR",
+  "sensor serial number": "G4-384",
+  "sensor description": "hyperspectral camera to measure visible near infrared (VNIR) radiation",
+  "sensor purpose": "measures spectral reflectance from 380nm to 1000nm"
+}
