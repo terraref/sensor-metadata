@@ -1,0 +1,9 @@
+{
+  "@context": "http://ncsa.illinois.edu",
+  "content" : {
+  },
+  "agent": {
+      "@type": "cat:extractor",
+      "extractor_id":"https://terraref.ncsa.illinois.edu/clowder/api/extractors/terra.sensor_fixed_metadata"
+  }
+}
