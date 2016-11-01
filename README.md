@@ -30,5 +30,5 @@ cat extractor_template.json | jq --argfile md $sensor/sensor_fixed_metadata.json
 curl -H "Content-Type: application/json" --user $CLOWDER_USER:$CLOWDER_PASSWORD -X POST --data @tmp.json $(cat $sensor/dataset.id)/metadata.jsonld
 
 rm tmp.json
-``
+```
 
