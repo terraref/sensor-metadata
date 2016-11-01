@@ -4,6 +4,7 @@ This repository contains device and sensor fixed metadata for the TERRA-REF proj
 
 The initial revision is the raw sensor_fixed_metadata object provided by LemnaTec for each sensor formatted for use with the Clowder metadata.jsonld endpoint. Sensor datasets include: 
 
+Sensors:
 * [co2sensor](https://terraref.ncsa.illinois.edu/clowder/datasets/581787d94f0ce77b6655b819)
 * [cropCircle](https://terraref.ncsa.illinois.edu/clowder/datasets/580361164f0c4a438cbb546c)
 * [flirlrCamera](https://terraref.ncsa.illinois.edu/clowder/datasets/5817877a4f0ce77b6655b320)
@@ -17,3 +18,17 @@ The initial revision is the raw sensor_fixed_metadata object provided by LemnaTe
 * [SWIR](https://terraref.ncsa.illinois.edu/clowder/datasets/5817870c4f0ce77b6655aecd)
 * [VNIR](https://terraref.ncsa.illinois.edu/clowder/datasets/581787264f0ce77b6655b125)
 * [weatherStation](https://terraref.ncsa.illinois.edu/clowder/datasets/58178a744f0ce77b6655d38a)
+
+Calibration targets:
+* [LabSphere](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5817c7c84f0c63f2a8ca5e6c)
+* [SphereOptics](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5818bb544f0c63f2a8d20963)
+
+## Adding Metadata
+```
+cat extractor_template.json | jq --argfile md $sensor/sensor_fixed_metadata.json '.content |= [$md]' > tmp.json
+
+curl -H "Content-Type: application/json" --user $CLOWDER_USER:$CLOWDER_PASSWORD -X POST --data @tmp.json $(cat $sensor/dataset.id)/metadata.jsonld
+
+rm tmp.json
+``
+
