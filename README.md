@@ -2,9 +2,9 @@
 
 This repository contains device and sensor fixed metadata for the TERRA-REF project used to populate the [Device and Sensor Information](https://terraref.ncsa.illinois.edu/clowder/collection/58035fa34f0c4a438cbb53dc) collection.
 
-The initial revision is the raw sensor_fixed_metadata object provided by LemnaTec for each sensor formatted for use with the Clowder metadata.jsonld endpoint. Sensor datasets include: 
+The initial revision is the raw sensor_fixed_metadata object provided by LemnaTec for each sensor formatted for use with the Clowder metadata.jsonld endpoint. The following link to the Clowder data set for each sensor or calibration target:
 
-Sensors:
+Sensors
 * [co2sensor](https://terraref.ncsa.illinois.edu/clowder/datasets/581787d94f0ce77b6655b819)
 * [cropCircle](https://terraref.ncsa.illinois.edu/clowder/datasets/580361164f0c4a438cbb546c)
 * [flirlrCamera](https://terraref.ncsa.illinois.edu/clowder/datasets/5817877a4f0ce77b6655b320)
@@ -32,3 +32,15 @@ curl -H "Content-Type: application/json" --user $CLOWDER_USER:$CLOWDER_PASSWORD 
 rm tmp.json
 ```
 
+## Accessing metadata in R
+
+Sensor metadata can easily be used in R. For example, plotting the RSR curve for the NDVI sensor:
+
+```
+> packages.install(RJSONIO)
+> library(RJSONIO)
+> d <- fromJSON("https://terraref.ncsa.illinois.edu/clowder/api/datasets/{id}/metadata.jsonld)
+> rsr<- d2[[1]]$content$rsr 
+> plot(rsr$up$ch1 ~ rsr$up$wavelength, type="l", col= "blue", xlab="Wavelength [nm]", ylab="Response")
+> lines(rsr$up$ch4 ~ rsr$up$wavelength, type="l", col= "red")
+```
