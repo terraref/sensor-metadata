@@ -32,3 +32,15 @@ curl -H "Content-Type: application/json" --user $CLOWDER_USER:$CLOWDER_PASSWORD 
 rm tmp.json
 ```
 
+## Accessing metadata in R
+
+Sensor metadata can easily be used in R. For example, plotting the RSR curve for the NDVI sensor:
+
+```
+> packages.install(RJSONIO)
+> library(RJSONIO)
+> d <- fromJSON("https://terraref.ncsa.illinois.edu/clowder/api/datasets/{id}/metadata.jsonld)
+> rsr<- d2[[1]]$content$rsr 
+> plot(rsr$up$ch1 ~ rsr$up$wavelength, type="l", col= "blue", xlab="Wavelength [nm]", ylab="Response")
+> lines(rsr$up$ch4 ~ rsr$up$wavelength, type="l", col= "red")
+```
