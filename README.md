@@ -1,10 +1,10 @@
 # Device and Sensor Fixed Metadata
 
-This repository contains device and sensor fixed metadata for the TERRA-REF project used to populate the [Device and Sensor Information](https://terraref.ncsa.illinois.edu/clowder/collection/58035fa34f0c4a438cbb53dc) collection. Each sensor and calibration target is represented by a Clowder dataset containing documentation artifacts (e.g., datasheets, calibration certificates, specifications).  Metadata is attached to each dataset using the Clowder metadata.jsonld endpoint.
+This repository contains device and sensor fixed metadata for the TERRA-REF project used to populate the [Device and Sensor Information](https://terraref.ncsa.illinois.edu/clowder/collection/58035fa34f0c4a438cbb53dc) collection. Each sensor and calibration target is represented by a Clowder dataset containing documentation artifacts (e.g., datasheets, calibration certificates, specifications).  Metadata is attached to each dataset for programmatic access using the Clowder [metadata.jsonld](https://terraref.ncsa.illinois.edu/clowder/assets/docs/api/index.html#!/datasets/addMetadataJsonLD) endpoint.
 
-The initial release [v0.1](https://github.com/terraref/sensor-metadata/releases/tag/v0.1) is simply the raw ```sensor_fixed_metadata``` object provided by LemnaTec for each sensor. Subsequent revisions add RSR data, improve field usage consistency across sensors, and eventually refactor the metadata to confirm with community standards such as SensorML.
+The initial release [v0.1](https://github.com/terraref/sensor-metadata/releases/tag/v0.1) is simply the raw ```sensor_fixed_metadata``` object provided by LemnaTec for each sensor with corrections to minor mispellings. Subsequent revisions add the RSR data, improve field usage consistency across sensors, and possibly refactor to align with standards such as the OGC [SWE](http://www.opengeospatial.org/ogc/markets-technologies/swe) and [SensorML](http://www.sensorml.com/)
 
-The following link to the Clowder data set for each sensor or calibration target:
+Below are links to Clowder datasets for each sensor and calibration target:
 
 Sensors
 * [co2sensor](https://terraref.ncsa.illinois.edu/clowder/datasets/581787d94f0ce77b6655b819)
@@ -26,8 +26,9 @@ Calibration targets:
 * [SphereOptics](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5818bb544f0c63f2a8d20963)
 
 ## Adding Metadata
+After updating metadata in this repository, it can be POSTed to the associated dataset using the following steps:
 ```
-cat extractor_template.json | jq --argfile md $sensor/sensor_fixed_metadata.json '.content |= [$md]' > tmp.json
+cat extractor_template.json | jq --argfile md $sensor/sensor_fixed_metadata.json '.content |= $md' > tmp.json
 
 curl -H "Content-Type: application/json" --user $CLOWDER_USER:$CLOWDER_PASSWORD -X POST --data @tmp.json $(cat $sensor/dataset.id)/metadata.jsonld
 
