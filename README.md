@@ -27,7 +27,8 @@ Calibration targets:
 
 ## Adding Metadata
 After updating metadata in this repository, it can be POSTed to the associated dataset using the following steps:
-```
+
+```sh
 cat extractor_template.json | jq --argfile md $sensor/sensor_fixed_metadata.json '.content |= $md' > tmp.json
 
 curl -H "Content-Type: application/json" --user $CLOWDER_USER:$CLOWDER_PASSWORD -X POST --data @tmp.json $(cat $sensor/dataset.id)/metadata.jsonld
@@ -39,11 +40,12 @@ rm tmp.json
 
 Sensor metadata can easily be used in R. For example, plotting the RSR curve for the NDVI sensor:
 
-```
-> packages.install(RJSONIO)
-> library(RJSONIO)
-> d <- fromJSON("https://terraref.ncsa.illinois.edu/clowder/api/datasets/{id}/metadata.jsonld)
-> rsr<- d2[[1]]$content$rsr 
-> plot(rsr$up$ch1 ~ rsr$up$wavelength, type="l", col= "blue", xlab="Wavelength [nm]", ylab="Response")
-> lines(rsr$up$ch4 ~ rsr$up$wavelength, type="l", col= "red")
+```r
+# install.packages('RJSONIO')
+library(RJSONIO)
+# d <- fromJSON("https://terraref.ncsa.illinois.edu/clowder/api/datasets/{id}/metadata.jsonld")
+ndvi_metadata <- fromJSON("https://terraref.ncsa.illinois.edu/clowder/api/datasets/581787524f0ce77b6655b2c7/metadata.jsonld")
+ndvi_rsr<- ndvi_metadata[[1]]$content$rsr 
+plot(rsr$up$ch1 ~ rsr$up$wavelength, type="l", col= "blue", xlab="Wavelength [nm]", ylab="Response")
+lines(rsr$up$ch4 ~ rsr$up$wavelength, type="l", col= "red")
 ```
