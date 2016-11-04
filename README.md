@@ -4,9 +4,6 @@ This repository contains device and sensor fixed metadata for the TERRA-REF proj
 
 The initial release [v0.1](https://github.com/terraref/sensor-metadata/releases/tag/v0.1) is simply the raw ```sensor_fixed_metadata``` object provided by LemnaTec for each sensor with corrections to minor mispellings. Subsequent revisions add the RSR data, improve field usage consistency across sensors, and possibly refactor to align with standards such as the OGC [SWE](http://www.opengeospatial.org/ogc/markets-technologies/swe) and [SensorML](http://www.sensorml.com/)
 
-
-There is a single collection for all sensors and calibration targets called ["Device and Sensor Information"](https://terraref.ncsa.illinois.edu/clowder/collection/58035fa34f0c4a438cbb53dc).
-
 The following url provides a list of all datasets in this collection:
 https://terraref.ncsa.illinois.edu/clowder/api/collections/58035fa34f0c4a438cbb53dc/getDatasets
 
