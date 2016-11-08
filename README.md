@@ -56,3 +56,51 @@ ndvi_rsr<- ndvi_metadata[[1]]$content$rsr
 plot(rsr$up$ch1 ~ rsr$up$wavelength, type="l", col= "blue", xlab="Wavelength [nm]", ylab="Response")
 lines(rsr$up$ch4 ~ rsr$up$wavelength, type="l", col= "red")
 ```
+
+# Documenting Sensor Platforms
+
+Currently, each sensor platform is represented as a space in Clowder (e.g., Maricopa Agricultural Center Field Scanner). To document a new sensor/platform:
+
+* Login to Clowder (https://terraref.ncsa.illinois.edu/clowder/)
+* Under the **Space** for your platform, create a collection calls "Device and Sensor Information", if it doesn't already exist
+* Create a **Dataset** to represent the sensor. Name the dataset based on the short manufacturer name and sensor type (e.g., Headwall VNIR) and add a brief description of the dataset. For examples, see https://terraref.ncsa.illinois.edu/clowder/collection/58035fa34f0c4a438cbb53dc.
+* Upload any associated datasheets, specifications, calibration certificates, or other related documentation to the dataset. 
+
+## Adding sensor metadata
+Clowder supports JSON-LD metadata for any Dataset. We've started using this feature to provide programmatic access to sensor metadata via the Clowder API. Examples are in the ```sensors``` directory in this repository.
+
+Create a directory and ```fixed_sensor_metadata.json``` file and issue a pull-request to this repository.
+
+The data in ```fixed_sensor_metadata.json``` will be inserted into the ```content``` object in the Clowder template below:
+```
+{
+  "@context": "http://purl.org/terra/contexts/sensor.jsonld",
+  "content" : {
+  },
+  "agent": {
+      "@type": "cat:extractor",
+      "extractor_id":"https://terraref.ncsa.illinois.edu/clowder/api/extractors/terra.sensor_fixed_metadata"
+  }
+}
+```
+
+The defacto standard for fixed sensor metadata is based on data provided by LemnaTec. This format will likely change going forward to leverage the OCG SWE set of vocabularies.
+
+LemnaTec fixed sensor metadata fields:
+
+| Field name              | Description | 
+| ----                    | ----         |
+| sensor manufacturer     | Manufacturer name |
+| sensor product name     | Sensor product or model name | 
+| sensor serial number    | Sensor serial number | 
+| sensor description      | Sensor short description | 
+| sensor purpose          | Short description of sensor purpose | 
+| is calibrated           | Whether the sensor is calibrated |     
+| calibration date        | Date of last calibration | 
+| calibration certificate | URL to certificate file in Clowder or description of location |
+| rsr                     | Relative spectral response object |   
+| output data format      | Sensor output data format | 
+
+Other fields are available, but generally specific to the LemnaTec Scanalyzer platform.  Examples can be found in the ```fixed_sensor_metadata.json``` files in the sensor subdirectories.
+
+Once
