@@ -39,6 +39,86 @@
           "intended_application" : {
               "@id": "swe:IntendedApplication",
               "@type": "xsd:string"
+          },
+          "band_number" : {
+              "@id": "swe:BandNumber",
+              "@type": "xsd:string"
+          },
+          "bandwidth" : {
+              "@id": "swe:Bandwidth",
+              "@type": "xsd:string"
+          },
+          "wavelength" : {
+              "@id": "swe:Wavelength",
+              "@type": "xsd:string"
+          },
+          "gantry_location" : {
+            "@id": "terra:GantryLocation",
+            "@type": "xsd:string"
+          },
+          "gantry_orientation" : {
+            "@id": "terra:GantryOrientation",
+            "@type": "xsd:string"
+          },
+          "camerabox_location" : {
+            "@id": "terra:CameraboxLocation",
+            "@type": "xsd:string"
+          },
+          "x" : {
+              "@id": "terra:x",
+              "@type": "xsd:float"
+          },
+          "y" : {
+              "@id": "terra:y",
+              "@type": "xsd:float"
+          },
+          "z" : {
+              "@id": "terra:z",
+              "@type": "xsd:float"
+          },
+          "components" : {
+             "@id": "terra:Components",
+             "@container": "@set"
+          },
+          "component"  : {
+             "@id" : "terra:Component",
+             "@type" : "xsd:string"
+          },
+          "component_type" : {
+             "@id" : "terra:ComponentType",
+             "@type" : "xsd:string"
+          },
+          "properties" : {
+             "@id": "terra:Properties",
+             "@container": "@set"
+          },
+          "aperture" : {
+             "@id" : "terra:Aperture",
+             "@type" : "xsd:float"
+          },  
+          "focal_length" : {
+             "@id" : "terra:FocalLength",
+             "@type" : "xsd:float"
+          },
+         "max_scan_resolution_width" : {
+             "@id" : "terra:MaxScanResolutionWidth",
+             "@type" : "xsd:int"           
+          },
+          "output_format" : {
+             "@id" : "terra:OutputFormat",
+             "@type" : "xsd:string"
+          },
+          "calibration_info" : {
+             "@id": "terra:CalibrationInformation",
+             "@container": "@set"           
+          },  
+          "calibrated" : {
+            "@id": "terra:Calibrated",
+            "@type" : "xsd:boolean"
+          },
+          "note" : {
+            "@id": "terra:Note",
+            "@type" : "xsd:string"
           }
      }
 }
