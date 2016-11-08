@@ -86,7 +86,25 @@ The data in ```fixed_sensor_metadata.json``` will be inserted into the ```conten
 
 The defacto standard for fixed sensor metadata is based on data provided by LemnaTec. This format will likely change going forward to leverage the OCG SWE set of vocabularies.
 
-LemnaTec fixed sensor metadata fields:
+## JSON-LD Context
+
+We are currently working on a JSON-LD context based in part on the OGC SWE and SensorML vocabularies. 
+
+| Field name              | Description |  Type | 
+| ----                    | ----         | ---- | 
+| id                      | http://purl.org/dc/terms/identifier    | xsd:string |
+| description             | http://purl.org/dc/terms/description   | xsd:string |  
+| platform_name           | http://sensorml.com/ont/swe/property/PlatformName | xsd:string |
+| manufacturer            | http://sensorml.com/ont/swe/property/ManufacturerName | xsd:string | 
+| model_number            | http://sensorml.com/ont/swe/property/ModelNumber | xsd:string | 
+| name                    | http://sensorml.com/ont/swe/property/ShortName | xsd:string | 
+| serial_number           | http://sensorml.com/ont/swe/property/SerialNumber | xsd:string | 
+| sensor_type             | http://sensorml.com/ont/swe/property/SensorType | xsd:string | 
+| intended_application    | http://sensorml.com/ont/swe/property/IntendedApplication| xsd:string | 
+
+
+## LemnaTec fixed sensor metadata fields:
+The following fields are used in the LemnaTec fixed sensor metadata and will eventually be migrated to OGC SWE and TERRA fields outlined above:
 
 | Field name              | Description | 
 | ----                    | ----         |
@@ -102,5 +120,3 @@ LemnaTec fixed sensor metadata fields:
 | output data format      | Sensor output data format | 
 
 Other fields are available, but generally specific to the LemnaTec Scanalyzer platform.  Examples can be found in the ```fixed_sensor_metadata.json``` files in the sensor subdirectories.
-
-Once
