@@ -238,6 +238,99 @@ Below is
           "properties" : {
              "@id": "terra:Properties",
              "@container": "@set"
+{
+    "@context": {
+      "terra" : "http://purl.org/terra/sensor#",
+      "dc": "http://purl.org/dc/terms/",
+      "swe" : "http://sensorml.com/ont/swe/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+          "id" : {
+            "@id": "dc:identifier",
+            "@type": "xsd:string"
+          },
+          "description" : {
+            "@id": "dc:description",
+            "@type": "xsd:string"
+          },
+          "platform_name" : {
+              "@id": "swe:PlatformName",
+              "@type": "xsd:string"
+          },
+          "manufacturer" : {
+              "@id": "swe:Manufacturer",
+              "@type": "xsd:string"
+          },
+          "model_number" : {
+              "@id": "swe:ModelNumber",
+              "@type": "xsd:string"
+          },
+          "name" : {
+              "@id": "swe:ShortName",
+              "@type": "xsd:string"
+          },
+          "serial_number" : {
+              "@id": "swe:SerialNumber",
+              "@type": "xsd:string"
+          },
+          "sensor_type" : {
+              "@id": "swe:SensorType",
+              "@type": "xsd:string"
+          },
+          "intended_application" : {
+              "@id": "swe:IntendedApplication",
+              "@type": "xsd:string"
+          },
+          "band_number" : {
+              "@id": "swe:BandNumber",
+              "@type": "xsd:string"
+          },
+          "bandwidth" : {
+              "@id": "swe:Bandwidth",
+              "@type": "xsd:string"
+          },
+          "wavelength" : {
+              "@id": "swe:Wavelength",
+              "@type": "xsd:string"
+          },
+          "gantry_location" : {
+            "@id": "terra:GantryLocation",
+            "@type": "xsd:string"
+          },
+          "gantry_orientation" : {
+            "@id": "terra:GantryOrientation",
+            "@type": "xsd:string"
+          },
+          "camerabox_location" : {
+            "@id": "terra:CameraboxLocation",
+            "@type": "xsd:string"
+          },
+          "x" : {
+              "@id": "terra:x",
+              "@type": "xsd:float"
+          },
+          "y" : {
+              "@id": "terra:y",
+              "@type": "xsd:float"
+          },
+          "z" : {
+              "@id": "terra:z",
+              "@type": "xsd:float"
+          },
+          "components" : {
+             "@id": "terra:Components",
+             "@container": "@set"
+          },
+          "component"  : {
+             "@id" : "terra:Component",
+             "@type" : "xsd:string"
+          },
+          "component_type" : {
+             "@id" : "terra:ComponentType",
+             "@type" : "xsd:string"
+          },
+          "properties" : {
+             "@id": "terra:Properties",
+             "@container": "@set"
           },
           "aperture" : {
              "@id" : "terra:Aperture",
@@ -248,52 +341,66 @@ Below is
              "@type" : "xsd:float"
           },
           "max_scan_resolution_width" : {
-{
-  "@context": "http://purl.org/terra/contexts/sensor.jsonld",
-  "content": {
-    "id": "swir camera box",
-    "name": "SWIR",
+             "@id" : "terra:MaxScanResolutionWidth",
+             "@type" : "xsd:int"
+          },
+          "output_format" : {
+             "@id" : "terra:OutputFormat",
+             "@type" : "xsd:string"
+          },
+          "calibration_info" : {
+             "@id": "terra:CalibrationInformation",
+             "@container": "@set"
+          },
+          "calibrated" : {
+            "@id": "terra:Calibrated",
+            "@type" : "xsd:boolean"
+          },
+          "certificate" : {
+            "@id": "terra:CalibrationCertificate",
+            "@type" : "xsd:string"
+          },      
+          "note" : {
+            "@id": "terra:Note",
+            "@type" : "xsd:string"
+          }
+     },
+    "id" : "swir camera box",
+    "name" : "SWIR",
     "manufacturer": "Headwall Scientific",
     "model_number": "SWIR",
     "serial_number": "G4-383",
-    "specification": "https://terraref.ncsa.illinois.edu/clowder/files/58178df74f0ce77b665606e3",
+    "specification" : "https://terraref.ncsa.illinois.edu/clowder/files/58178df74f0ce77b665606e3",
     "description": "hyperspectral camera to measure shortwave infrared (SWIR) radiation",
     "intended_application": "measures spectral reflectance from 950nm to 2500nm",
-    "gantry_location": "camerabox",
-    "gantry_orientation": "facing down",
-    "camerabox_location": {
-      "x": "0.877",
-      "y": "2.325",
-      "z": "0.635"
+    "gantry_location" : "camerabox",
+    "gantry_orientation" : "facing down",
+    "camerabox_location" : {
+      "x" : "0.877",
+      "y" : "2.325",
+      "z" : "0.635"
     },
-    "components": [
-      {
-        "component_type": "optics",
-        "manufacturer": "Stingray optics",
-        "name": "SR-1200-030 F/1.3 0.48-2.5um",
-        "properties": {
-          "aperture": 2,
-          "focal_length": 25
-        }
+    "components" : [{
+      "component_type" : "optics",
+      "manufacturer" : "Stingray optics",
+      "name" : "SR-1200-030 F/1.3 0.48-2.5um",
+      "properties" : {
+        "aperture" : 2.0,
+        "focal_length" : 25
       }
-    ],
-    "calibration_info": {
-      "calibrated": true,
-      "date": "2015-09-21",
-      "certificate": "https://terraref.ncsa.illinois.edu/clowder/files/58178df74f0ce77b665606ed",
-      "note": "todo, calibration white/dark reference need to be done constantly during measurements"
+    }],
+    "calibration_info" : {
+      "calibrated" : true,
+      "date" : "2015-09-21",
+      "certificate" : "https://terraref.ncsa.illinois.edu/clowder/files/58178df74f0ce77b665606ed",
+      "note" : "todo, calibration white/dark reference need to be done constantly during measurements"
     },
-    "output_format": "hypercube with preview image and additional information provided by sensor",
-    "properties": {
-      "max_scan_resolution_width": 384,
+    "output_format" : "hypercube with preview image and additional information provided by sensor",
+    "properties" : {
+      "max_scan_resolution_width" : 384,
       "field_of_view": {
-        "y": 0.75
+        "y" : 0.75
       }
-    }
-  },
-  "agent": {
-    "@type": "cat:extractor",
-    "extractor_id": "https://terraref.ncsa.illinois.edu/clowder/api/extractors/terra.sensor_fixed_metadata"
-  }
+    }  
 }
 ```
