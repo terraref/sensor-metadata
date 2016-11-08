@@ -88,7 +88,7 @@ The defacto standard for fixed sensor metadata is based on data provided by Lemn
 
 ## JSON-LD Context
 
-**Note**: The JSON-LD context is a work in progress. This is an attempt to model the LemnaTec sensor fixed metadata (see below) using OCG standard vocabularies from SWE and SensorML. Please feel free to provide feedback/input via Github issues.
+**Note**: The JSON-LD (sensor context)[contexts/sensor.jsonld) is a work in progress. This is an attempt to model the LemnaTec sensor fixed metadata (see below) using OCG standard vocabularies from SWE and SensorML. Please feel free to provide feedback/input via Github issues.
 
 | Field name              | Definition |  Type | 
 | ----                    | ----         | ---- | 
