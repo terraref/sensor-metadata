@@ -1,0 +1,44 @@
+{
+    "@context": {
+      "terra" : "http://purl.org/terra/sensor#",
+      "dc": "http://purl.org/dc/terms/",
+      "swe" : "http://sensorml.com/ont/swe/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+          "id" : {
+            "@id": "dc:identifier",
+            "@type": "xsd:string"
+          },
+          "description" : {
+            "@id": "dc:description",
+            "@type": "xsd:string"
+          },
+          "platform_name" : {
+              "@id": "swe:PlatformName",
+              "@type": "xsd:string"
+          },
+          "manufacturer" : {
+              "@id": "swe:Manufacturer",
+              "@type": "xsd:string"
+          },
+          "model_number" : {
+              "@id": "swe:ModelNumber",
+              "@type": "xsd:string"
+          },
+          "name" : {
+              "@id": "swe:ShortName",
+              "@type": "xsd:string"
+          },
+          "serial_number" : {
+              "@id": "swe:SerialNumber",
+              "@type": "xsd:string"
+          },
+          "sensor_type" : {
+              "@id": "swe:SensorType",
+              "@type": "xsd:string"
+          },
+          "intended_application" : {
+              "@id": "swe:IntendedApplication",
+              "@type": "xsd:string"
+          }
+     }
+}
