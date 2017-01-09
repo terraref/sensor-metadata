@@ -13,24 +13,24 @@ Below are links to Clowder datasets for each sensor and calibration target:
 
 ## Sensors
 
-* [co2sensor](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a9924f0cad7d8131b648/metadata.jsonld)
-* [cropCircle](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a7ed4f0cad7d8131a2e7/metadata.jsonld)
-* [flirlrCamera](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a7184f0cad7d8131994a/metadata.jsonld)
-* [ndviSensor](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a8f64f0cad7d8131af54/metadata.jsonld)
-* [parSensor](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a8ce4f0cad7d8131ad86/metadata.jsonld)
-* [priSensor](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a9174f0cad7d8131b09a/metadata.jsonld)
-* [ps2](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a84b4f0cad7d8131a73d/metadata.jsonld)
-* [scanner3D](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a7444f0cad7d81319b2b/metadata.jsonld)
-* [spectrometer](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a87a4f0cad7d8131a96a/metadata.jsonld)
-* [stereo](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a8ae4f0cad7d8131ac0e/metadata.jsonld)
-* [SWIR](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a79e4f0cad7d81319f5f/metadata.jsonld)
-* [VNIR](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a7bb4f0cad7d8131a0b7/metadata.jsonld)
-* [weatherStation](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a9724f0cad7d8131b4d3/metadata.jsonld)
+* [co2sensor](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5873a9924f0cad7d8131b648/metadata.jsonld)
+* [cropCircle](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5873a7ed4f0cad7d8131a2e7/metadata.jsonld)
+* [flirlrCamera](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5873a7184f0cad7d8131994a/metadata.jsonld)
+* [ndviSensor](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5873a8f64f0cad7d8131af54/metadata.jsonld)
+* [parSensor](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5873a8ce4f0cad7d8131ad86/metadata.jsonld)
+* [priSensor](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5873a9174f0cad7d8131b09a/metadata.jsonld)
+* [ps2](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5873a84b4f0cad7d8131a73d/metadata.jsonld)
+* [scanner3D](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5873a7444f0cad7d81319b2b/metadata.jsonld)
+* [spectrometer](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5873a87a4f0cad7d8131a96a/metadata.jsonld)
+* [stereo](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5873a8ae4f0cad7d8131ac0e/metadata.jsonld)
+* [SWIR](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5873a79e4f0cad7d81319f5f/metadata.jsonld)
+* [VNIR](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5873a7bb4f0cad7d8131a0b7/metadata.jsonld)
+* [weatherStation](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5873a9724f0cad7d8131b4d3/metadata.jsonld)
 
 ## Calibration targets:
 
-* [LabSphere](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a8184f0cad7d8131a4dd)
-* [SphereOptics](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a9434f0cad7d8131b29a)
+* [LabSphere](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5873a8184f0cad7d8131a4dd)
+* [SphereOptics](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5873a9434f0cad7d8131b29a)
 
 ## Adding Metadata
 After updating metadata in this repository, it can be POSTed to the associated dataset using the following steps:
