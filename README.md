@@ -1,6 +1,6 @@
 # Device and Sensor Fixed Metadata
 
-This repository contains device and sensor fixed metadata for the TERRA-REF project used to populate the [Device and Sensor Information](https://terraref.ncsa.illinois.edu/clowder/collection/58035fa34f0c4a438cbb53dc) collection. Each sensor and calibration target is represented by a Clowder dataset containing documentation artifacts (e.g., datasheets, calibration certificates, specifications).  Metadata is attached to each dataset for programmatic access using the Clowder [metadata.jsonld](https://terraref.ncsa.illinois.edu/clowder/assets/docs/api/index.html#!/datasets/addMetadataJsonLD) endpoint.
+This repository contains device and sensor fixed metadata for the TERRA-REF project used to populate the [Device and Sensor Information](https://terraref.ncsa.illinois.edu/clowder/collection/5873a6234f0cad7d81318e36) collection. Each sensor and calibration target is represented by a Clowder dataset containing documentation artifacts (e.g., datasheets, calibration certificates, specifications).  Metadata is attached to each dataset for programmatic access using the Clowder [metadata.jsonld](https://terraref.ncsa.illinois.edu/clowder/assets/docs/api/index.html#!/datasets/addMetadataJsonLD) endpoint.
 
 The initial release [v0.1](https://github.com/terraref/sensor-metadata/releases/tag/v0.1) is simply the raw ```sensor_fixed_metadata``` object provided by LemnaTec for each sensor with corrections to minor mispellings. Subsequent revisions add the RSR data, improve field usage consistency across sensors, and possibly refactor to align with standards such as the OGC [SWE](http://www.opengeospatial.org/ogc/markets-technologies/swe) and [SensorML](http://www.sensorml.com/)
 
@@ -13,24 +13,24 @@ Below are links to Clowder datasets for each sensor and calibration target:
 
 ## Sensors
 
-* [co2sensor](https://terraref.ncsa.illinois.edu/clowder/datasets/581787d94f0ce77b6655b819)
-* [cropCircle](https://terraref.ncsa.illinois.edu/clowder/datasets/580361164f0c4a438cbb546c)
-* [flirlrCamera](https://terraref.ncsa.illinois.edu/clowder/datasets/5817877a4f0ce77b6655b320)
-* [ndviSensor](https://terraref.ncsa.illinois.edu/clowder/datasets/581787524f0ce77b6655b2c7)
-* [parSensor](https://terraref.ncsa.illinois.edu/clowder/datasets/581788344f0ce77b6655bf23)
-* [priSensor](https://terraref.ncsa.illinois.edu/clowder/datasets/581789524f0ce77b6655ccf9)
-* [ps2](https://terraref.ncsa.illinois.edu/clowder/datasets/581789834f0ce77b6655cee4)
-* [scanner3D](https://terraref.ncsa.illinois.edu/clowder/datasets/581789af4f0ce77b6655d094)
-* [spectrometer](https://terraref.ncsa.illinois.edu/clowder/datasets/581789ca4f0ce77b6655d0f5)
-* [stereo](https://terraref.ncsa.illinois.edu/clowder/datasets/5817873d4f0ce77b6655b269)
-* [SWIR](https://terraref.ncsa.illinois.edu/clowder/datasets/5817870c4f0ce77b6655aecd)
-* [VNIR](https://terraref.ncsa.illinois.edu/clowder/datasets/581787264f0ce77b6655b125)
-* [weatherStation](https://terraref.ncsa.illinois.edu/clowder/datasets/58178a744f0ce77b6655d38a)
+* [co2sensor](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a9924f0cad7d8131b648/metadata.jsonld)
+* [cropCircle](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a7ed4f0cad7d8131a2e7/metadata.jsonld)
+* [flirlrCamera](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a7184f0cad7d8131994a/metadata.jsonld)
+* [ndviSensor](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a8f64f0cad7d8131af54/metadata.jsonld)
+* [parSensor](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a8ce4f0cad7d8131ad86/metadata.jsonld)
+* [priSensor](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a9174f0cad7d8131b09a/metadata.jsonld)
+* [ps2](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a84b4f0cad7d8131a73d/metadata.jsonld)
+* [scanner3D](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a7444f0cad7d81319b2b/metadata.jsonld)
+* [spectrometer](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a87a4f0cad7d8131a96a/metadata.jsonld)
+* [stereo](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a8ae4f0cad7d8131ac0e/metadata.jsonld)
+* [SWIR](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a79e4f0cad7d81319f5f/metadata.jsonld)
+* [VNIR](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a7bb4f0cad7d8131a0b7/metadata.jsonld)
+* [weatherStation](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a9724f0cad7d8131b4d3/metadata.jsonld)
 
 ## Calibration targets:
 
-* [LabSphere](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5817c7c84f0c63f2a8ca5e6c)
-* [SphereOptics](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5818bb544f0c63f2a8d20963)
+* [LabSphere](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a8184f0cad7d8131a4dd)
+* [SphereOptics](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a9434f0cad7d8131b29a)
 
 ## Adding Metadata
 After updating metadata in this repository, it can be POSTed to the associated dataset using the following steps:
@@ -51,10 +51,10 @@ Sensor metadata can easily be used in R. For example, plotting the RSR curve for
 # install.packages('RJSONIO')
 library(RJSONIO)
 # d <- fromJSON("https://terraref.ncsa.illinois.edu/clowder/api/datasets/{id}/metadata.jsonld")
-ndvi_metadata <- fromJSON("https://terraref.ncsa.illinois.edu/clowder/api/datasets/581787524f0ce77b6655b2c7/metadata.jsonld")
+ndvi_metadata <- fromJSON("https://terraref.ncsa.illinois.edu/clowder/api/datasets/5873a8f64f0cad7d8131af54/metadata.jsonld")
 ndvi_rsr<- ndvi_metadata[[1]]$content$rsr 
-plot(rsr$up$ch1 ~ rsr$up$wavelength, type="l", col= "blue", xlab="Wavelength [nm]", ylab="Response")
-lines(rsr$up$ch4 ~ rsr$up$wavelength, type="l", col= "red")
+plot(ndvi_rsr$up$ch1 ~ ndvi_rsr$up$wavelength, type="l", col= "blue", xlab="Wavelength [nm]", ylab="Response")
+lines(ndvi_rsr$up$ch4 ~ ndvi_rsr$up$wavelength, type="l", col= "red")
 ```
 
 # Documenting Sensor Platforms
@@ -63,7 +63,7 @@ Currently, each sensor platform is represented as a space in Clowder (e.g., Mari
 
 * Login to Clowder (https://terraref.ncsa.illinois.edu/clowder/)
 * Under the **Space** for your platform, create a collection calls "Device and Sensor Information", if it doesn't already exist
-* Create a **Dataset** to represent the sensor. Name the dataset based on the short manufacturer name and sensor type (e.g., Headwall VNIR) and add a brief description of the dataset. For examples, see https://terraref.ncsa.illinois.edu/clowder/collection/58035fa34f0c4a438cbb53dc.
+* Create a **Dataset** to represent the sensor. Name the dataset based on the short manufacturer name and sensor type (e.g., Headwall VNIR) and add a brief description of the dataset. For examples, see https://terraref.ncsa.illinois.edu/clowder/collection/5873a6234f0cad7d81318e36.
 * Upload any associated datasheets, specifications, calibration certificates, or other related documentation to the dataset. 
 
 ## Adding sensor metadata
