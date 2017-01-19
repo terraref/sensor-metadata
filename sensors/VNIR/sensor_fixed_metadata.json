@@ -3,5 +3,7 @@
   "sensor product name": "VNIR",
   "sensor serial number": "G4-384",
   "sensor description": "hyperspectral camera to measure visible near infrared (VNIR) radiation",
-  "sensor purpose": "measures spectral reflectance from 380nm to 1000nm"
+  "sensor purpose": "measures spectral reflectance from 380nm to 1000nm",
+  "optics focal length [mm]": "23",
+  "optics focus apperture": "2.0"
 }
