@@ -1,5 +1,5 @@
 {
-  "@context": "http://ncsa.illinois.edu",
+  "@context": ["https://clowder.ncsa.illinois.edu/contexts/metadata.jsonld"],
   "content" : {
   },
   "agent": {
