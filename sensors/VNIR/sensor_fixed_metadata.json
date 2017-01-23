@@ -4,6 +4,18 @@
   "sensor serial number": "G4-384",
   "sensor description": "hyperspectral camera to measure visible near infrared (VNIR) radiation",
   "sensor purpose": "measures spectral reflectance from 380nm to 1000nm",
-  "optics focal length [mm]": "23",
-  "optics focus apperture": "2.0"
+  "location in gantry system": "camera box, facing ground",
+  "location in camera box x [m]": "0.877",
+  "location in camera box y [m]": "2.325",
+  "location in camera box z [m]": "0.635",
+  "field of view y [m]": "1.000",
+  "optics manufactuer": "Schneider Kreuznach",
+  "optics name": "Xenoplan 1.4/23-0902 CM 120 BK 15 Compac 21-100 1917 32326",
+  "optics focal length [mm]": "22.5",
+  "optics focus setting": "2m",
+  "optics apperture setting": "f/2",
+  "output data format": "hypercube with preview image and additional information provided by sensor",
+  "max scan resolution width [pixel]": "1600",
+  "calibration available": "calibration white/dark reference need to be done constantly during measurements",
+  "sensor id": "vnir camera box"
 }
