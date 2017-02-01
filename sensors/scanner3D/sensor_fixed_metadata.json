@@ -18,11 +18,8 @@
   "Calibration available": "false",
   "output data format": ".ply open file format",
   "sensor id": "3d camera box",
-  "properties" : [
-	  "offset": {
-		  "x": -13,
-		  "y": 50,
-		  "z": 0
-	  }
-   ]
+  "alignment_correction_offset" : {
+      "date" : "2016-11-22", 
+  	  "value" : [-14, 42, 0]
+  }
 }
