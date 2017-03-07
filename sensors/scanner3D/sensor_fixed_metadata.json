@@ -5,7 +5,7 @@
   "sensor west serial number": "S215-1036",
   "sensor description": "two laser / camera combinations",
   "sensor purpose": "measure 3D surface topology",
-  "laser emission wavelenght [nm]": "810",
+  "laser emission wavelegth [nm]": "810",
   "laser emission energy [W]": "2",
   "location in gantry system": "camera box, facing ground",
   "scanner east location in camera box x [m]": "2.070",
@@ -19,7 +19,9 @@
   "output data format": ".ply open file format",
   "sensor id": "3d camera box",
   "alignment_correction_offset" : {
-      "date" : "2016-11-22", 
-  	  "value" : [-14, 42, 0]
+	  "west" : {
+          "date" : "2016-11-22", 
+          "value" : [-14, 42, 0]
+      }
   }
 }
