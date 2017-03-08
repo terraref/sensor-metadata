@@ -45,7 +45,9 @@ rm tmp.json
 
 ## Accessing metadata in R
 
-Sensor metadata can easily be used in R. For example, plotting the RSR curve for the NDVI sensor:
+Sensor metadata can easily be used in R. See the [sensor metadata tutorial for more examples](https://github.com/terraref/tutorials/blob/master/sensors/02-sensor-metadata.Rmd).
+
+For example, plotting the RSR curve for the NDVI sensor:
 
 ```r
 # install.packages('RJSONIO')
