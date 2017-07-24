@@ -17,7 +17,7 @@
   "location in camera box x [m]": "0.877",
   "location in camera box y [m]": "2.276",
   "location in camera box z [m]": "0.578",
-  "field of view at 2m in X- Y- direction [m]": "[1.857 1.246]",
+  "field of view at 2m in X- Y- direction [m]": "[1.015 0.749]",
   "bounding Box [m]": "[1.857     1.246]",
   "calibration available": "false",
   "sensor id": "stereo camera box"
