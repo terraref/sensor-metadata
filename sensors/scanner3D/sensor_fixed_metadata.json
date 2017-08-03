@@ -1,28 +1,34 @@
 {
-  "sensor manufacturer": "Fraunhofer-Entwicklungszentrum",
-  "sensor product name": "Custom made 3D Scanner",
-  "sensor east serial number": "S215-1030",
-  "sensor west serial number": "S215-1036",
-  "sensor description": "two laser / camera combinations",
-  "sensor purpose": "measure 3D surface topology",
-  "laser emission wavelenght [nm]": "810",
-  "laser emission energy [W]": "2",
-  "location in gantry system": "camera box, facing ground",
-  "scanner east location in camera box x [m]": "2.070",
-  "scanner east location in camera box y [m]": "0.306",
-  "scanner east location in camera box z [m]": "1.135",
-  "scanner west location in camera box x [m]": "2.070",
-  "scanner west location in camera box y [m]": "2.726",
-  "scanner west location in camera box z [m]": "1.135",
-  "field of view y [m]": "0.800",
-  "Calibration available": "false",
-  "output data format": ".ply open file format",
-  "sensor id": "3d camera box",
-  "properties" : [
+  "sensor_manufacturer": "Fraunhofer-Entwicklungszentrum",
+  "sensor_product_name": "Custom made 3D Scanner",
+  "sensor_east_serial_number": "S215-1030",
+  "sensor_west_serial_number": "S215-1036",
+  "sensor_description": "two laser / camera combinations",
+  "sensor_purpose": "measure 3D surface topology",
+  "laser_emission_wavelength_nm": "810",
+  "laser_emission_energy_W": "2",
+  "location_in_gantry_system": "camera box, facing ground",
+  "scanner_east_location_in_camera_box_m": {
+	 "x": "2.070",
+     "y": "0.306",
+     "z": "1.135"
+  },
+  "scanner_west_location_in_camera_box_m":{
+	 "x": "2.070",
+     "y": "2.726",
+     "z": "1.135"
+  },
+  "field_of_view_m": {
+	 "y": "0.800"
+  },
+  "calibration_available": "false",
+  "output_data_format": ".ply open file format",
+  "sensor_id": "scanner3DTop",
+  "properties" : {
 	  "offset": {
 		  "x": -13,
 		  "y": 50,
 		  "z": 0
 	  }
-   ]
+   }
 }

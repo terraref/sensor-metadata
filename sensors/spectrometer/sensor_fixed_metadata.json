@@ -1,5 +1,5 @@
 {
-  "manufacturer": "www.oceanoptics.com",
-  "model": "STS-VIS",
-  "location in gantry system": "top of gantry"
+  "sensor_manufacturer": "www.oceanoptics.com",
+  "sensor_model": "STS-VIS",
+  "location_in_gantry_system": "top of gantry"
 }
