@@ -16,7 +16,7 @@
   "optics_manufactuer": "Schneider Kreuznach",
   "optics_name": "Xenoplan 1.4/23-0902 CM 120 BK 15 Compac 21-100 1917 32326",
   "optics_focal_length_mm": "22.5",
-  "optics_focus_setting": "2m",
+  "optics_focus_setting_m": "2",
   "optics_apperture_setting": "f/2",
   "output_data_format": "hypercube with preview image and additional information provided by sensor",
   "max_scan_resolution_width_pixel": "1600",
