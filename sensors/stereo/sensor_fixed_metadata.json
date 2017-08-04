@@ -23,6 +23,9 @@
 	 "x": "1.015",
 	 "y": "0.749"
   },
+  "stereo_offsets_from_center": "0.17",
+  "rail_height_offset": "1.64",
+  "slope_estimation": "0.574",
   "bounding_box [m]": "[1.857     1.246]",
   "calibration_available": "false",
   "sensor_id": "stereo camera box"
