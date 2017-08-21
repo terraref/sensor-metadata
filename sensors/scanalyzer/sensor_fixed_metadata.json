@@ -1,8 +1,13 @@
 {
   "sensor_id": "scanalyzer",
-  "sensor_manufacturer": "LemnaTec",
+  "sensor_manufacturer": "LemnaTec Corp.",
   "sensor_product_name": "Field Scanalyzer",
-  "sensor_serial_number": "",
+  "sensor_serial_number": "7100019",
   "sensor_description": "Fully automated system designed to capture outdoor phenotyping data",
-  "sensor_purpose": ""
+  "sensor_purpose": "",
+  "system_scan_area_north_south_m": "211",
+  "system_scan_area_east_west_m": "23.125",
+  "system_scan_area_height_m": "8"
 }
+
+
