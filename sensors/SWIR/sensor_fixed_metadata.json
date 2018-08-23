@@ -7,8 +7,8 @@
     "sensor_purpose": "measures spectral reflectance from 950nm to 2500nm",
     "location_in_gantry_system": "camera box, facing ground",
     "location_in_camera_box_m": {
-      "x": "0.877",
-      "y": "2.325",
+      "x": "0.495",
+      "y": "1.875",
       "z": "0.635"
     },
     "field_of_view_y_degrees": "44.5",

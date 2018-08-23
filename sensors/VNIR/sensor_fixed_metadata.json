@@ -8,12 +8,12 @@
       "sensor_purpose": "measures spectral reflectance from 380nm to 1000nm",
       "location_in_gantry_system": "camera box, facing ground",
       "location_in_camera_box_m": {
-        "x": "0.877",
-        "y": "2.325",
+        "x": "0.867",
+        "y": "1.663",
         "z": "0.635"
       },
       "field_of_view_degrees":{
-         "y": "21.0"
+         "y": "1.0"
       },
       "optics_manufactuer": "Schneider Kreuznach",
       "optics_name": "Xenoplan 1.4/23-0902 CM 120 BK 15 Compac 21-100 1917 32326",

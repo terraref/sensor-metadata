@@ -8,8 +8,8 @@
       "buildin_variable_optics": "",
       "location_in_gantry_system": "camera box, facing ground",
       "location_in_camera_box_m": {
-        "x": "0.877",
-        "y": "1.361",
+        "x": "0.346",
+        "y": "2.250",
         "z": "0.520"
       },
       "field_of_view_m": {
