@@ -1,75 +1,72 @@
-{ "start_dates": {
-    "2018-08-15": {
-      "sensor_manufacturer": "FLIR Systems",
-      "sensor_product_name": "A615",
-      "sensor_serial_number": "55003076",
-      "sensor_description": "IR Sensor 640x480",
-      "sensor_purpose": "measure infrared radiation from soil/crop surface",
-      "buildin_variable_optics": "",
-      "location_in_gantry_system": "camera box, facing ground",
-      "location_in_camera_box_m": {
-        "x": "0.346",
-        "y": "2.250",
-        "z": "0.520"
-      },
-      "field_of_view_m": {
-        "x": "1.496",
-        "y": "1.105"
-      },
-      "rail_height_offset": "1.0",
-      "output_data_format": "16bit Grey",
-      "calibration_available": "calibration parameters from FLIR to convert gray value to temperature",
-      "sensor_computer_interface": "GigE",
-      "sensor_id": "flirIrCamera",
-      "calibration_R": "16923.6",
-      "calibration_B": "1434.6",
-      "calibration_F": "1",
-      "calibration_J1": "70.0704",
-      "calibration_J0": "4124",
-      "calibration_alpha1": "0.006569",
-      "calibration_alpha2": "0.01262",
-      "calibration_X": "1.9",
-      "calibration_beta1": "-0.002276",
-      "calibration_beta2": "-0.00667",
-      "is_calibrated": "False"
+[
+  {
+    "start_date":"2018-08-15",
+    "sensor_manufacturer": "FLIR Systems",
+    "sensor_product_name": "A615",
+    "sensor_serial_number": "55003076",
+    "sensor_description": "IR Sensor 640x480",
+    "sensor_purpose": "measure infrared radiation from soil/crop surface",
+    "buildin_variable_optics": "",
+    "location_in_gantry_system": "camera box, facing ground",
+    "location_in_camera_box_m": {
+      "x": "0.346",
+      "y": "2.250",
+      "z": "0.520"
+    },
+    "field_of_view_m": {
+      "x": "1.496",
+      "y": "1.105"
+    },
+    "rail_height_offset": "1.0",
+    "output_data_format": "16bit Grey",
+    "calibration_available": "calibration parameters from FLIR to convert gray value to temperature",
+    "sensor_computer_interface": "GigE",
+    "sensor_id": "flirIrCamera",
+    "calibration_R": "16923.6",
+    "calibration_B": "1434.6",
+    "calibration_F": "1",
+    "calibration_J1": "70.0704",
+    "calibration_J0": "4124",
+    "calibration_alpha1": "0.006569",
+    "calibration_alpha2": "0.01262",
+    "calibration_X": "1.9",
+    "calibration_beta1": "-0.002276",
+    "calibration_beta2": "-0.00667",
+    "is_calibrated": "False"
   },
-  "2012-01-01": {
-      "sensor_manufacturer": "FLIR Systems",
-      "sensor_product_name": "A615",
-      "sensor_serial_number": "55003076",
-      "sensor_description": "IR Sensor 640x480",
-      "sensor_purpose": "measure infrared radiation from soil/crop surface",
-      "buildin_variable_optics": "",
-      "location_in_gantry_system": "camera box, facing ground",
-      "location_in_camera_box_m": {
-        "x": "0.877",
-        "y": "1.361",
-        "z": "0.520"
-      },
-      "field_of_view_m": {
-        "x": "1.496",
-        "y": "1.105"
-      },
-      "rail_height_offset": "1.0",
-      "output_data_format": "16bit Grey",
-      "calibration_available": "calibration parameters from FLIR to convert gray value to temperature",
-      "sensor_computer_interface": "GigE",
-      "sensor_id": "flirIrCamera",
-      "calibration_R": "16923.6",
-      "calibration_B": "1434.6",
-      "calibration_F": "1",
-      "calibration_J1": "70.0704",
-      "calibration_J0": "4124",
-      "calibration_alpha1": "0.006569",
-      "calibration_alpha2": "0.01262",
-      "calibration_X": "1.9",
-      "calibration_beta1": "-0.002276",
-      "calibration_beta2": "-0.00667",
-      "is_calibrated": "False"
-    }
+  {
+    "start_date": "2012-01-01",
+    "sensor_manufacturer": "FLIR Systems",
+    "sensor_product_name": "A615",
+    "sensor_serial_number": "55003076",
+    "sensor_description": "IR Sensor 640x480",
+    "sensor_purpose": "measure infrared radiation from soil/crop surface",
+    "buildin_variable_optics": "",
+    "location_in_gantry_system": "camera box, facing ground",
+    "location_in_camera_box_m": {
+      "x": "0.877",
+      "y": "1.361",
+      "z": "0.520"
+    },
+    "field_of_view_m": {
+      "x": "1.496",
+      "y": "1.105"
+    },
+    "rail_height_offset": "1.0",
+    "output_data_format": "16bit Grey",
+    "calibration_available": "calibration parameters from FLIR to convert gray value to temperature",
+    "sensor_computer_interface": "GigE",
+    "sensor_id": "flirIrCamera",
+    "calibration_R": "16923.6",
+    "calibration_B": "1434.6",
+    "calibration_F": "1",
+    "calibration_J1": "70.0704",
+    "calibration_J0": "4124",
+    "calibration_alpha1": "0.006569",
+    "calibration_alpha2": "0.01262",
+    "calibration_X": "1.9",
+    "calibration_beta1": "-0.002276",
+    "calibration_beta2": "-0.00667",
+    "is_calibrated": "False"
   }
-}
-
-
-
-
+]

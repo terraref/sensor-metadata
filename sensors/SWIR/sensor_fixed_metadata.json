@@ -1,5 +1,6 @@
-{"start_dates": {
-  "2018-08-15": {
+[
+  {
+    "start_date": "2018-08-15",
     "sensor_manufacturer": "Headwall Scientific",
     "sensor_product_name": "SWIR",
     "sensor_serial_number": "G4-383",
@@ -20,8 +21,10 @@
     "max_scan_resolution_width_pixel": "384",
     "calibration_available": "todo, calibration white/dark reference need to be done constantly during measurements",
     "sensor_id": "SWIR"
+
   },
-  "2012-01-01": {
+  {
+    "start_date": "2012-01-01",
     "sensor_manufacturer": "Headwall Scientific",
     "sensor_product_name": "SWIR",
     "sensor_serial_number": "G4-383",
@@ -42,6 +45,5 @@
     "max_scan_resolution_width_pixel": "384",
     "calibration_available": "todo, calibration white/dark reference need to be done constantly during measurements",
     "sensor_id": "SWIR"
-    }
   }
-}
+]
