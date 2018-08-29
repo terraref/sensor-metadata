@@ -1,6 +1,9 @@
-{
-  "sensor_manufacturer": "www.thiesclima.com",
-  "article_nr": "4.9200.00.000",
-  "analog_digital_interface": "wago 750-478",
-  "location_in_gantry_system": "top of gantry"
-}
+[
+  {
+    "start_date": "2012-01-01",
+    "sensor_manufacturer": "www.thiesclima.com",
+    "article_nr": "4.9200.00.000",
+    "analog_digital_interface": "wago 750-478",
+    "location_in_gantry_system": "top of gantry"
+  }
+]

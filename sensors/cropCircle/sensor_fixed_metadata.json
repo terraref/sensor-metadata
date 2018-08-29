@@ -1,17 +1,38 @@
-{
-  "sensor_manufacturer": "Holland Scientific",
-  "sensor_product_name": "Crop Cirlce ACS430",
-  "sensor_serial_number": "Todo",
-  "sensor_description": "Active Crop Canopy Sensor",
-  "sensor_purpose": "measure crop/soil reflectance at 670nm, 730nm, 780nm",
-  "location_in_gantry_system": "camera box, facing ground",
-  "location_in_camera_box_m": {
-	 "x":  "0.480",
-     "y": "1.920",
-     "z": "0.6"
+[
+  {
+    "start_date": "2012-01-01",
+    "sensor_manufacturer": "Holland Scientific",
+    "sensor_product_name": "Crop Circle ACS430",
+    "sensor_serial_number": "Todo",
+    "sensor_description": "Active Crop Canopy Sensor",
+    "sensor_purpose": "measure crop/soil reflectance at 670nm, 730nm, 780nm",
+    "location_in_gantry_system": "camera box, facing ground",
+    "location_in_camera_box_m": {
+       "x":  "0.480",
+       "y": "1.920",
+       "z": "0.6"
+    },
+    "sensor_computer_interface": "RS232@38400bit/s",
+    "calibration_available": "false",
+    "output_data_format": "text/xml",
+    "sensor_id": "cropCircle"
   },
-  "sensor_computer_interface": "RS232@38400bit/s",
-  "calibration_available": "false",
-  "output_data_format": "text/xml",
-  "sensor_id": "cropCircle"
-}
+  {
+    "start_date": "2018-08-18",
+    "sensor_manufacturer": "Holland Scientific",
+    "sensor_product_name": "Crop Circle ACS430",
+    "sensor_serial_number": "201344077",
+    "sensor_description": "Active Crop Canopy Sensor",
+    "sensor_purpose": "measure crop/soil reflectance at 670nm, 730nm, 780nm",
+    "location_in_gantry_system": "camera box, facing ground",
+    "location_in_camera_box_m": {
+       "x":  "1.234",
+       "y": "2.246",
+       "z": "0.6"
+    },
+    "sensor_computer_interface": "RS232@38400bit/s",
+    "calibration_available": "false",
+    "output_data_format": "text/xml",
+    "sensor_id": "cropCircle"
+  }
+]
